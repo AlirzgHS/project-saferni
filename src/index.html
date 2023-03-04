@@ -31,10 +31,10 @@
               <a class="nav-link active" aria-current="page" href="#">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">خدماتنا </a>
+              <a class="nav-link" href="#services">خدماتنا </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">عروضنا</a>
+              <a class="nav-link" href="#offers">عروضنا</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">تواصل معنا</a>
@@ -61,7 +61,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
       <h1 class="text-center">خدماتنا</h1>
       <div class="container">
         <div class="row">
@@ -144,10 +144,96 @@
         </div>
       </div>
     </section>
+
+    <section class="offers">
+      <div class="container py-4">
+        <h1 class="h1 text-center" id="pageHeaderTitle">رحلاتنا السياحية</h1>
+    
+        <article class="postcard dark blue">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="./images/cairo.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title blue"><a href="#">رحلة إلى الأهرامات في مصر.</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt ms-2"></i>الإثنين, 25 فيفري 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">تتصف أهرامات مصر الثلاثة بأنها أحد أهم عجائب الدنيا السبعة في جمهورية مصر تقع على هضبة الجيزة في محافظة الجيزة، أيضًا تقع على الضفة الغربية لنهر النيل، وهي تشمل ثلاثة أهرامات وهم خوفو، خفرع، منقرع، والتي بنيت قبل حوالي 25 قرنًا قبل الميلاد.</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fa-solid fa-dollar-sign"></i> 250</li>
+              <li class="tag__item"><i class="fas fa-clock ms-2"></i>6 أيام</li>
+              <li class="tag__item play blue">
+                <a href="./cairo.html"><i class="fa-solid fa-plus"></i> رؤية المزيد</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+        
+
+        <article class="postcard dark green">
+          <a class="postcard__img_link" href="#">
+            <img class="postcard__img" src="./images/city.jpg" alt="Image Title" />
+          </a>
+          <div class="postcard__text">
+            <h1 class="postcard__title green"><a href="#">رحلة إلى مدينة إسطنبول في تركيا.</a></h1>
+            <div class="postcard__subtitle small">
+              <time datetime="2020-05-25 12:00:00">
+                <i class="fas fa-calendar-alt ms-2"></i>الإثنين, 5 مارس 2023
+              </time>
+            </div>
+            <div class="postcard__bar"></div>
+            <div class="postcard__preview-txt">إسطنبول هي واحدة من أكبر و أجمل مدن تركيا وهي مصنفة ضمن أكثر المدن السياحية جذباً للسياح في العالم وتُعتبر إسطنبول الخيار الأول للسياح الذين يفكرون في الذهاب إلى تركيا. ستكون جولتنا في المعالم السياحية الخاصة بها .</div>
+            <ul class="postcard__tagbox">
+              <li class="tag__item"><i class="fa-solid fa-dollar-sign"></i> 300</li>
+              <li class="tag__item"><i class="fas fa-clock ms-2"></i> 3 أيام</li>
+              <li class="tag__item play green">
+                <a href="./turkey.html"><i class="fa-solid fa-plus"></i>رؤية المزيد</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
   
   
-  <footer></footer>
+  <footer>
+    <div class="containr">
+      <div class="top-footer">
+        <div class="row">
+          <div id="map" class="col-sm-12 col-md-6">
+            <iframe class="smap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7053.28184171719!2d-0.28426135762305477!3d27.882298726816334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdf59f98bd4bd057%3A0x9749ee5b3cf2e985!2sAdrar%20Sports%20Complex!5e0!3m2!1sen!2sdz!4v1677938097883!5m2!1sen!2sdz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="contact-us">
+              <h5>عن الشركة</h5>
+              <ul class="contact-list">
+                  <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  أدرار , الجزائر 
+                  </li>
+                  <li>
+                      <i class="fas fa-phone"></i>
+                      012 3456 7890
+                  </li>
+                  <li>
+                      <i class="fas fa-envelope"></i>
+                      email@example.com
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyrights text-center">
+        <p>جميع الحقوق محفوظة <span id="fullYear"></span></p>
+      </div>
+    </div>
+  </footer>
     
 
     
