@@ -536,7 +536,9 @@ footer{
         margin-left: 0;
         margin-right: 0;
         #map{
-            padding: 50px 170px 0 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .smap{
                 border: 2px solid white;
             }
@@ -570,6 +572,248 @@ footer{
 
 
 
+// TURKEY PAGE /////////////////
+/////////////////////////////
+
+main{
+    .introduction{
+        position: relative;
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+        background-image: 
+        linear-gradient(to right, rgb(121, 221, 9, 0.3) , rgba(106, 148, 58, 0.4)), 
+        url(../images/city.jpg);
+        .intro{
+            position: absolute;
+            color: $main-text-color;
+            top: 20%;
+            right: 15%;
+            left: 15%;
+            @media (max-width: 1100px) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            h1,p{
+                float: right;
+            }
+            h1{
+                font-family: 'changa' , sans-serif ;
+                color: $main-green;
+                font-size: 50px;
+                @media (max-width: 1100px) {
+                    font-size: 50px;
+                }
+            }
+            p{
+                font-size: 30px;
+                margin: 45px 5px 0 340px;
+                @media (max-width: 1100px) {
+                    margin: 0;
+                    font-size: 30px;
+                }
+            }
+            
+        }
+        .btn{
+            position: absolute;
+            @include button($main-green ,$main-text-color, $main-text-color , $main-blue-rgb-015);
+            top: 70%;
+            right: 15%;
+            @media (max-width: 1200px) {
+                display: none;
+
+            }
+        }
+        
+    }
+
+    .about-turkey{
+        background-color: rgb(167, 218, 108 , 0.7);
+        h1{
+            font-family: 'changa' , sans-serif ;
+            font-size: 55px;
+        }
+        p{
+            font-size: 35px;
+            margin: 16px 100px ;
+            @media (max-width: 1100px) {
+                margin: 0;
+            }
+        }
+        
+    }
+
+    // .gallery{
+    //     .container h1 {
+    //         font-family: 'changa' , sans-serif ;
+    //         font-weight: 700;
+    //         font-size: 50px;
+    //     }
+    //     hr {
+    //         border: 0;
+    //         height: 3px;
+    //         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    //     }
+        
+    //     .thumbnail {
+    //         margin-bottom:6px;
+    //       display:flex;
+    //       flex-wrap: wrap;
+    //     }
+        
+            
+    //     .blur {
+    //         transform: scale(0.9);
+    //         opacity: 0.6;
+    //         filter: blur(2px);
+    //     }
+    // }
+
+    .gallery{
+        &-head{
+            h1{
+                font-family: 'changa' , sans-serif ;
+                font-size: 45px;
+            }
+        }
+        .card{
+            border: none;
+            transition: all .5s ;
+            .card-body{
+                h5{
+                    font-family: 'changa' , sans-serif ;
+                    color: $main-green;
+                }
+                .card-title1{
+                    font-family: 'changa' , sans-serif ;
+                    font-size: 35px;
+                }
+            }
+            .card-img-top{
+                border-top-left-radius: 0 !important;
+                border-top-right-radius: 0 !important;
+                border: 3px solid $main-green;
+            }
+            .card-img-top1{
+                border-top-left-radius: 0 !important;
+                border-top-right-radius: 0 !important;
+                border: 5px solid $main-green;
+            }
+            .card-text1{
+                font-size: 20px;
+            }
+            &:hover{
+                box-shadow: 0px -2px 30px 0px rgb(102 102 102 / 9%);
+            }
+        }
+    }
+
+}
+
+
+
+
+// EGY PAGE ///////////////////
+//////////////////////////////
+
+
+main{
+    .introduction-egy{
+        position: relative;
+        height: 550px;
+        background-position: center;
+        background-size: cover;
+        background-image: 
+        linear-gradient(to right, rgba(0, 25, 41, 0.5), rgba(8, 56, 87, 0.3) ), 
+        url(../images/egybackground.jpg);
+        .intro{
+            position: absolute;
+            color: $main-text-color;
+            top: 20%;
+            right: 15%;
+            left: 15%;
+            @media (max-width: 1100px) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+            h1,p{
+                float: right;
+
+            }
+            h1{
+                font-family: 'changa' , sans-serif ;
+                color: $main-blue;
+                font-size: 50px;
+                @media (max-width: 1100px) {
+                    font-size: 50px;
+                }
+            }
+            p{
+                font-size: 30px;
+                margin: 45px 5px 0 340px;
+                @media (max-width: 1100px) {
+                    margin: 0;
+                    font-size: 30px;
+                }
+            }
+            
+        }
+        .btn{
+            position: absolute;
+            @include button($main-blue ,$main-text-color, $main-text-color , $main-blue-rgb-015);
+            top: 70%;
+            right: 15%;
+            @media (max-width: 1200px) {
+                display: none;
+
+            }
+        }
+    }
+
+    .about-egypt{
+        background-color: rgba(177, 204, 216, 0.501);
+        height: auto;
+        .side-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .side-text{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+        h1{
+            display: flex;
+            justify-content: flex-start;
+            font-family: 'changa' , sans-serif ;
+            font-size: 55px;
+            color: $main-blue;
+        }
+        p{
+            font-size: 25px;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+
+        }
+    }
+
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    height: 500px;
+                }
+            }
+        }
+    }
+}
 
 
 

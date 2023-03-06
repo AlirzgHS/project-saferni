@@ -8,8 +8,11 @@ $border-color : black ;
 
 $background-color: rgb(75,0,0);
 
-$main-green: #79dd09 !default;
+$main-green: rgb(121, 221, 9) !default;
 $main-green-rgb-015: rgba(121, 221, 9, 0.1) !default;
 
-$main-blue: #0076bd !default;
+$main-blue: rgb(0, 118, 189) !default;
 $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
+
+$gallery-width: 100%;
+$transition-duration: 0.5s;

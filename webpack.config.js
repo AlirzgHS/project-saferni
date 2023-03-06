@@ -108,6 +108,16 @@ module.exports = {
             filename: 'index.html',
         }),
 
+        new HtmlWebpackPlugin({
+          template: './src/turkey.html',
+          filename: 'turkey.html',
+        }),
+
+        new HtmlWebpackPlugin({
+          template: './src/egypt.html',
+          filename: 'egypt.html',
+        }),
+
         new MiniCssExtractPlugin()
 
     ]
