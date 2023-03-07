@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
+var $ = require("jquery");
 
 
 module.exports = {
@@ -118,7 +119,18 @@ module.exports = {
           filename: 'egypt.html',
         }),
 
-        new MiniCssExtractPlugin()
+        new HtmlWebpackPlugin({
+          template: './src/sign-in.html',
+          filename: 'sign-in.html',
+        }),
+
+        new HtmlWebpackPlugin({
+          template: './src/log-in.html',
+          filename: 'log-in.html',
+        }),
+
+        new MiniCssExtractPlugin(),
+
 
     ]
     

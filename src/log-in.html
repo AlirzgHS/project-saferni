@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">
+              <img src="./images/noun-plane-1445492.png" alt="logo">
+              سفرني
+            </a>
+            <div class="login d-lg-none">
+              <a href="./sign-in.html" class="user"><i class="fa-solid fa-user"></i></a>
+            </div>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#who-are-we">من نحن</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#services">خدماتنا </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#offers">عروضنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">تواصل معنا</a>
+                </li>
+              </ul>
+            </div>
+            <div class="login d-none d-lg-block">
+              <a href="./sign-in.html" class="user"><i class="fa-solid fa-user"></i></a>
+            </div>
+            
+          </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mx-auto">
+                <div id="first">
+                    <div class="myform form ">
+                         <div class="logo mb-3">
+                             <div class="col-md-12 text-center">
+                                <h1>تسجيل الدخول</h1>
+                             </div>
+                        </div>
+                       <form action="" method="post" name="login">
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1" class="mb-2">البريد الإلكتروني</label>
+                                  <input type="email" name="email"  class="form-control mb-4" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                               </div>
+                               <div class="form-group">
+                                  <label for="exampleInputEmail1" class="mb-2">كلمة المرور</label>
+                                  <input type="password" name="password" id="password"  class="form-control mb-4" aria-describedby="emailHelp" placeholder="Enter Password">
+                               </div>
+                               <div class="form-group">
+                                  <p class="text-center"> بالتسجيل فإنك تقبل <a href="#">شروط الاستخدام</a></p>
+                               </div>
+                               <div class="col-md-12 text-center ">
+                                  <button type="submit" class=" btn btn-block mybtn btn-primary">تسجيل الدخول</button>
+                               </div>
+                               <div class="col-md-12 ">
+                                  <div class="login-or">
+                                     <hr class="hr-or">
+                                     <span class="span-or">أو</span>
+                                  </div>
+                               </div>
+                               <div class="col-md-12 mb-3">
+                                  <p class="text-center">
+                                     <a href="javascript:void();" class="google btn mybtn">
+                                      سجل باستخدام جوجل 
+                                      <i class="fa-brands fa-google ms-2 mt-1"></i>
+                                     </a>
+                                  </p>
+                               </div>
+                               <div class="form-group">
+                                  <p class="text-center">ليس لديك حساب؟<a href="./sign-in.html" id="signup">سجل هنا</a></p>
+                               </div>
+                            </form>
+                     
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>   
+    </main>
+
+    <footer>
+        <div class="containr">
+          <div class="top-footer">
+            <div class="row">
+              <div id="map" class="col-sm-12 col-md-6">
+                <iframe class="smap my-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7053.28184171719!2d-0.28426135762305477!3d27.882298726816334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdf59f98bd4bd057%3A0x9749ee5b3cf2e985!2sAdrar%20Sports%20Complex!5e0!3m2!1sen!2sdz!4v1677938097883!5m2!1sen!2sdz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <div class="contact-us">
+                  <h5>عن الشركة</h5>
+                  <ul class="contact-list">
+                      <li>
+                      <i class="fas fa-map-marker-alt"></i>
+                      أدرار , الجزائر 
+                      </li>
+                      <li>
+                          <i class="fas fa-phone"></i>
+                          012 3456 7890
+                      </li>
+                      <li>
+                          <i class="fas fa-envelope"></i>
+                          email@example.com
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="copyrights text-center">
+            <p class=" mb-0">جميع الحقوق محفوظة <span id="fullYear"></span></p>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
