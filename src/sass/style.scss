@@ -90,26 +90,19 @@ header{
             }
             &-container {
                 @include button($secondary-color , $main-text-color , $main-text-color , $hover-color);
-                position: absolute;
+                // position: absolute;
                 z-index: 1;
-                padding: 10px 25px;
+                padding: 3px 15px !important;
                 top: 25px;
                 left: -37px;
                 border: 1px solid $border-color;
                 transition: all .5s ease-in-out;
                 transform: translateY(0);
                 opacity: 50% ;
-                visibility: hidden;
+                visibility: visible;
                 @media (max-width: 992px ) {
-                    display: none;
+                    visibility:hidden;
                     
-                }
-    
-                .Bbtn{
-                    display: ruby-text;
-                    z-index: 2;
-                    text-decoration: none;
-                    color: $main-text-color;
                 }
             }
             

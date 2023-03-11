@@ -3,6 +3,8 @@ import 'jquery/dist/jquery'
 import '@popperjs/core'
 import './sass/style.scss'
 import '@fortawesome/fontawesome-free/js/all'
+import $ from 'jquery'
+import validate from 'jquery-validation'
 
 
 

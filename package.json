@@ -32,6 +32,7 @@
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
+    "jquery-validation": "^1.19.5",
     "postcss-preset-env": "^8.0.1"
   }
 }
